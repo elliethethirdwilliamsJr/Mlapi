@@ -30,13 +30,13 @@ APi simple untuk informasi Mobile Legends, di ambil dari Liquipedia 😃.
 - **Landing**
 - https://ml-api-en.vercel.app/api/
 - **Hero**
-- https://ml-api-en.vercel.app/api/mlbb?hero=
+- https://ml-api-psi.vercel.app/api/mlbb?hero=
 - **Items**
-- https://ml-api-en.vercel.app/api/mlbb-items?name=
+- https://ml-api-psi.vercel.app/api/mlbb-items?name=
 - **Pro**
-- https://ml-api-en.vercel.app/api/mlbb-pro?name=
+- https://ml-api-psi.vercel.app/api/mlbb-pro?name=
 - **Patches**
-- https://ml-api-omega.vercel.app/api/mlbb-patch
+- https://ml-api-psi.vercel.app/api/mlbb-patch
 
 # Setup Your APi
 - **Resources**
@@ -53,7 +53,7 @@ APi simple untuk informasi Mobile Legends, di ambil dari Liquipedia 😃.
 # **Pro Player**
 - ```/api/mlbb-pro?name=PRO_NAME```
 - Query: ```name```
-- **Test it now**: [Here](https://ml-api-en.vercel.app/api/mlbb-pro?name=Kairi)
+- **Test it now**: [Here](https://ml-api-psi.vercel.app/api/mlbb-pro?name=Kairi)
 ```json
 {
   "Name": "Gilang",
@@ -186,7 +186,7 @@ APi simple untuk informasi Mobile Legends, di ambil dari Liquipedia 😃.
 # **Hero Information**
 - ```/api/mlbb?hero=HERO_NAME```
 - Query: ```hero```
-- **Test it now**: [Here](https://ml-api-en.vercel.app/api/mlbb?hero=Hanzo)
+- **Test it now**: [Here](https://ml-api-psi.vercel.app/api/mlbb?hero=Hanzo)
 
 # Response:
 ```json
@@ -271,7 +271,7 @@ APi simple untuk informasi Mobile Legends, di ambil dari Liquipedia 😃.
 # IN-Game Items
 - ```/api/mlbb-items?name=Malefic Gun```
 - Query: ```name```
-- **Test it now**: [Here](https://ml-api-en.vercel.app/api/mlbb-items?name=Malefic_Gun)
+- **Test it now**: [Here](https://ml-api-psi.vercel.app/api/mlbb-items?name=Malefic_Gun)
 # Response:
 ```json
 {
