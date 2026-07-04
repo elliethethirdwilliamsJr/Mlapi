@@ -1,9 +1,28 @@
 import axios from "axios";
 import { load } from "cheerio";
 import { loadPage, jsonResponse } from "./lib/http.mjs";
+import { heroRoles } from "./lib/hero-roles-data.mjs";
 
 export default async (req) => {
-  const hero = new URL(req.url).searchParams.get("hero") || "Miya";
+  const params = new URL(req.url).searchParams;
+  const role = params.get("role");
+  const listHeroes = params.get("heroes");
+
+  if (role || listHeroes !== null) {
+    const filtered = role
+      ? heroRoles.filter((h) =>
+          h.roles.some((r) => r.toLowerCase() === role.toLowerCase())
+        )
+      : heroRoles;
+
+    return jsonResponse({
+      role: role || "all",
+      count: filtered.length,
+      heroes: filtered,
+    });
+  }
+
+  const hero = params.get("hero") || "Miya";
   const url = "https://liquipedia.net/mobilelegends/" + hero;
   const urlLore = "https://liquipedia.net/mobilelegends/" + hero + "/Lore";
 
